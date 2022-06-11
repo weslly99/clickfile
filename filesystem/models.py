@@ -1,3 +1,4 @@
+from django.utils.functional import cached_property
 from django.db import models
 from .mixins import TimestampableMixin
 
@@ -17,7 +18,7 @@ class Directory(TimestampableMixin, models.Model):
     class Meta:
         ordering = ("name", "updated_at")
 
-    @property
+    @cached_property
     def children_quantity(self):
         return self.children.count()
 
