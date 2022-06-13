@@ -1,6 +1,6 @@
 # ClickFile 
-O projeto CLickFile foi desenvolvido para um teste tecninco, foi utilizado o framework Django.
-Caso seja definido as credenciais para o AWS S3 o sistema armazenará seus arquivos em nuvem, caso contrario serão armazenados no sistema de arquivo do computador.
+O projeto CLickFile foi desenvolvido para um teste técnico, foi utilizado o framework Django.
+Caso seja definido as credenciais para o AWS S3 o sistema armazenará seus arquivos em nuvem, caso contrário serão armazenados no sistema de arquivo do computador.
 
 ### Pré-requisitos
  - Docker
@@ -20,6 +20,7 @@ logo após subir o banco de dados com:
 ```console
 foo@bar:~$ docker-compose up
 ```
+** Não é mais necessario, foi enviado o .env para o github ** </br>
 copiar o arquivo `.env-sample` que está em contrib para a raiz do projeto removendo `"-sample"`
 
 ```console
